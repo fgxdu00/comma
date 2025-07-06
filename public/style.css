@@ -1,0 +1,78 @@
+/* style.css */
+:root {
+  --primary: #4a90e2;
+  --background: #f5f7fa;
+  --text: #333;
+  --button-bg: #fff;
+  --button-border: #4a90e2;
+  --button-hover: #4a90e2;
+  --button-text-hover: #fff;
+  --radius: 8px;
+  --gap: 12px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+body {
+  background: var(--background);
+  color: var(--text);
+  padding: var(--gap);
+}
+
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--gap);
+  margin-bottom: var(--gap);
+}
+
+.controls > * {
+  border: 2px solid var(--button-border);
+  background: var(--button-bg);
+  color: var(--button-border);
+  padding: 8px 16px;
+  border-radius: var(--radius);
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+
+.controls > *:hover:not(:disabled) {
+  background: var(--button-hover);
+  color: var(--button-text-hover);
+}
+
+.controls > *:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.settings {
+  display: flex;
+  gap: var(--gap);
+  margin-bottom: var(--gap);
+  align-items: center;
+}
+
+.settings label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.video-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--gap);
+}
+
+video {
+  width: 100%;
+  border-radius: var(--radius);
+  background: #000;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}

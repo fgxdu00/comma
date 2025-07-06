@@ -3,9 +3,10 @@
   <head>
     <meta charset="utf-8" />
     <title>Comms App</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div>
+    <div class="controls">
       <button id="btnCall">Call</button>
       <button id="btnAnswer" disabled>Answer</button>
       <button id="btnEnd" disabled>End Call</button>
@@ -14,13 +15,13 @@
       <button id="btnApplyAudio">Reapply Audio Settings</button>
     </div>
 
-    <div>
+    <div class="settings">
       <label
         ><input type="checkbox" id="chkEcho" checked /> Echo Cancellation</label
       >
       <label><input type="checkbox" id="chkNoise" /> Noise Suppression</label>
-      <label
-        >Sample Rate:
+      <label>
+        Sample Rate:
         <select id="selSample">
           <option value="16000">16kHz</option>
           <option value="32000">32kHz</option>
@@ -30,8 +31,10 @@
       </label>
     </div>
 
-    <video id="localVideo" autoplay muted playsinline></video>
-    <video id="remoteVideo" autoplay playsinline></video>
+    <div class="video-grid">
+      <video id="localVideo" autoplay muted playsinline></video>
+      <video id="remoteVideo" autoplay playsinline></video>
+    </div>
 
     <script src="client.js"></script>
   </body>
