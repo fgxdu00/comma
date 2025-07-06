@@ -1,9 +1,14 @@
 # COMMA
 
-## Table of Contents
+## Content
 
+- [Description](#description)
 - [Installation](#installation)
 - [Usage](#usage)
+
+## Description
+
+Very simple communication app in local network
 
 ## Installation
 
@@ -19,5 +24,3 @@ npm install
 ```
 
 ## Usage
-
-Very simple communication app in local network
