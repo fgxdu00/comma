@@ -1,6 +1,4 @@
-# Project Title
-
-COMMA
+# COMMA
 
 ## Table of Contents
 
